@@ -195,9 +195,9 @@ img { max-width: 100%; display: block; }
   width: 160px;
   filter: drop-shadow(0 10px 20px rgba(22,25,43,0.18));
 }
-.fc-1 { top: 10%; left: 6%; width: 190px; animation: float-1 4.5s ease-in-out infinite; animation-delay: 0s; }
-.fc-2 { bottom: 26%; right: 2%; width: 150px; animation: float-2 4.5s ease-in-out infinite; animation-delay: 1.1s; }
-.fc-3 { bottom: 10%; left: 22%; width: 170px; animation: float-3 4.5s ease-in-out infinite; animation-delay: 2.2s; }
+.fc-1 { top: 14%; left: 14%; width: 190px; animation: float-1 4.5s ease-in-out infinite; animation-delay: 0s; }
+.fc-2 { bottom: 28%; right: 10%; width: 150px; animation: float-2 4.5s ease-in-out infinite; animation-delay: 1.1s; }
+.fc-3 { bottom: 4%; left: 6%; width: 170px; animation: float-3 4.5s ease-in-out infinite; animation-delay: 2.2s; }
 
 @keyframes float-1 {
   0%, 100% { transform: scale(1.1) translateY(0); }
@@ -217,8 +217,11 @@ img { max-width: 100%; display: block; }
 }
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-visual { min-height: 420px; }
-  .floating-card { width: 96px !important; }
+  .hero-visual { min-height: 460px; }
+  .floating-card { width: 120px !important; }
+  .fc-1 { top: 4%; left: -2%; }
+  .fc-2 { bottom: 32%; right: -2%; }
+  .fc-3 { bottom: 6%; left: -2%; }
 }
 
 /* ---------- rewards ---------- */
@@ -241,7 +244,9 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 16px 40px rgba(22,25,43,0.06);
 }
 @media (max-width: 620px) {
-  .reward-card { width: 100%; flex: 1 1 260px; }
+  .reward-card { width: 100%; flex: 0 0 auto; }
+  .rewards-grid { flex-direction: column; }
+  .reward-plus { display: none; }
 }
 .reward-card--creator { border-top: 4px solid var(--flame); }
 .reward-card--user { border-top: 4px solid var(--teal); }
