@@ -112,7 +112,7 @@ const I18N = {
   // ---- Promotions page ----
   'promo.eyebrow': { en: 'List of Promo Available', id: 'Daftar Promo Tersedia' },
   'promo.title': { en: 'More Promos, More Perks with Allo Bank PayLater', id: 'Lebih Banyak Promo, Lebih Banyak Keuntungan dengan Allo Bank PayLater' },
-  'promo.intro': { en: 'More promos, more perks with Allo Bank PayLater — updated as of 22 July 2026.', id: 'Lebih banyak promo, lebih banyak keuntungan bareng Allo Bank PayLater — diperbarui per 22 Juli 2026.' },
+  'promo.intro': { en: 'Updated as of 22 July 2026', id: 'Diperbarui per 22 Juli 2026' },
   'promo.link': { en: 'View Promo →', id: 'Lihat Promo →' },
 
   'promo.c1.badge': { en: 'Up to 50%', id: 'Hingga 50%' },
