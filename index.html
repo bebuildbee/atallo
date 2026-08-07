@@ -10,17 +10,23 @@
 <body>
 
 <header class="nav">
-  <a href="#" class="nav-logo">
+  <a href="index.html" class="nav-logo">
     <img src="https://bebuildbee.github.io/atallo/assets/logos/allobank-logo.svg" alt="Allo Bank" />
   </a>
   <nav class="nav-links">
-    <a href="#rewards">Rewards</a>
-    <a href="#videos">Examples</a>
-    <a href="#rule1">Authenticity</a>
-    <a href="#rule2">Content</a>
-    <a href="#journey">Registration</a>
+    <a href="#rewards" data-i18n="nav.rewards">Rewards</a>
+    <a href="#videos" data-i18n="nav.examples">Examples</a>
+    <a href="#rule1" data-i18n="nav.authenticity">Authenticity</a>
+    <a href="#rule2" data-i18n="nav.content">Content</a>
+    <a href="#journey" data-i18n="nav.registration">Registration</a>
   </nav>
-  <a href="#journey" class="nav-cta">Creator Guide</a>
+  <div class="nav-right">
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="id">ID</button>
+    </div>
+    <a href="#journey" class="nav-cta" data-i18n="nav.creatorGuide">Creator Guide</a>
+  </div>
 </header>
 
 <main>
@@ -31,20 +37,20 @@
     <img class="hero-orb" src="https://bebuildbee.github.io/atallo/assets/decorations/gradient-orb-orange.webp" alt="" />
     <div class="hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">Creator Guideline</p>
-        <h1>Create Better<br />PayLater Content</h1>
-        <p class="hero-sub">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Creator Guideline</p>
+        <h1 data-i18n-html="hero.title">Create Better<br />PayLater Content</h1>
+        <p class="hero-sub" data-i18n="hero.sub">
           Learn how to create authentic, engaging and high-performing
           Allo Bank PayLater content while earning real rewards for it.
         </p>
         <div class="hero-actions">
-          <a href="#rewards" class="btn btn-primary">See Your Rewards</a>
-          <a href="#rule1" class="btn btn-ghost">Best Practice</a>
+          <a href="#rewards" class="btn btn-primary" data-i18n="hero.ctaRewards">See Your Rewards</a>
+          <a href="#rule1" class="btn btn-ghost" data-i18n="hero.ctaPractice">Best Practice</a>
         </div>
         <div class="hero-stats">
-          <div><strong>5 min</strong><span>Registration</span></div>
-          <div><strong>Rp100M</strong><span>Credit Limit</span></div>
-          <div><strong>20+</strong><span>Promotions</span></div>
+          <div><strong>5 min</strong><span data-i18n="hero.statRegistration">Registration</span></div>
+          <div><strong>Rp100M</strong><span data-i18n="hero.statCreditLimit">Credit Limit</span></div>
+          <div><strong>20+</strong><span data-i18n="hero.statPromotions">Promotions</span></div>
         </div>
       </div>
       <div class="hero-visual">
@@ -57,50 +63,50 @@
     </div>
   </section>
 
-  <!-- ============ REWARDS (WIIFT — moved above the fold) ============ -->
+  <!-- ============ REWARDS ============ -->
   <section id="rewards" class="section rewards-section">
-    <p class="eyebrow">What You'll Earn</p>
-    <h2>Get Paid For Every Real Referral</h2>
-    <p class="section-intro">
+    <p class="eyebrow" data-i18n="rewards.eyebrow">What You'll Earn</p>
+    <h2 data-i18n="rewards.title">Get Paid For Every Real Referral</h2>
+    <p class="section-intro" data-i18n="rewards.intro">
       Both sides of the referral get rewarded — straight to their account
       balance, on a fixed weekly schedule.
     </p>
 
     <div class="rewards-grid">
       <div class="reward-card reward-card--creator">
-        <span class="reward-tag">You, the Creator</span>
+        <span class="reward-tag" data-i18n="rewards.creatorTag">You, the Creator</span>
         <p class="reward-amount">Rp150.000</p>
-        <p class="reward-desc">For every referral who becomes eligible.</p>
+        <p class="reward-desc" data-i18n="rewards.creatorDesc">For every referral who becomes eligible.</p>
       </div>
       <div class="reward-plus">+</div>
       <div class="reward-card reward-card--user">
-        <span class="reward-tag">Their New Referral</span>
+        <span class="reward-tag" data-i18n="rewards.userTag">Invited Users</span>
         <p class="reward-amount">Rp100.000</p>
-        <p class="reward-desc">For the friend they bring in.</p>
+        <p class="reward-desc" data-i18n="rewards.userDesc">For the friend they bring in.</p>
       </div>
     </div>
 
     <div class="reward-conditions">
       <div class="condition">
         <span class="condition-icon">✓</span>
-        <p>Referred user reaches a minimum credit limit of <strong>Rp1.000.000</strong></p>
+        <p data-i18n-html="rewards.condition1">Referred user reaches a minimum credit limit of <strong>Rp1.000.000</strong></p>
       </div>
       <div class="condition">
         <span class="condition-icon">✓</span>
-        <p>Both rewards land as <strong>account balance</strong> automatically</p>
+        <p data-i18n-html="rewards.condition2">Both rewards land as <strong>account balance</strong> automatically</p>
       </div>
       <div class="condition">
         <span class="condition-icon condition-icon--day">W</span>
-        <p>Payouts are processed every <strong>Wednesday</strong></p>
+        <p data-i18n-html="rewards.condition3">Payouts are processed every <strong>Wednesday</strong></p>
       </div>
     </div>
   </section>
 
-  <!-- ============ VIDEO EXAMPLES (moved above the fold) ============ -->
+  <!-- ============ VIDEO EXAMPLES ============ -->
   <section id="videos" class="section video-section">
-    <p class="eyebrow">Content Examples</p>
-    <h2>See It In Action</h2>
-    <p class="section-intro">
+    <p class="eyebrow" data-i18n="videos.eyebrow">Content Examples</p>
+    <h2 data-i18n="videos.title">See It In Action</h2>
+    <p class="section-intro" data-i18n="videos.intro">
       Real examples from our KOLs — this is the tone and format that performs.
     </p>
 
@@ -114,8 +120,8 @@
             <a target="_blank" href="https://www.tiktok.com/@beblitzbee/video/7663514937964170517">@beblitzbee</a>
           </section>
         </blockquote>
-        <span class="video-category">Coffee</span>
-        <p class="video-caption">Finding an easy 50% promo on coffee &amp; food — and stacking a referral bonus on top.</p>
+        <span class="video-category" data-i18n="videos.cat1">Coffee</span>
+        <p class="video-caption" data-i18n="videos.caption1">Finding an easy 50% promo on coffee &amp; food — and stacking a referral bonus on top.</p>
       </div>
 
       <div class="video-card">
@@ -127,8 +133,8 @@
             <a target="_blank" href="https://www.tiktok.com/@nopikikie23/video/7665957421235424533">@nopikikie23</a>
           </section>
         </blockquote>
-        <span class="video-category">Dining</span>
-        <p class="video-caption">A simple 3-step walkthrough: download, activate PayLater, use a referral code — dining discount + bonus balance.</p>
+        <span class="video-category" data-i18n="videos.cat2">Dining</span>
+        <p class="video-caption" data-i18n="videos.caption2">A simple 3-step walkthrough: download, activate PayLater, use a referral code — dining discount + bonus balance.</p>
       </div>
     </div>
   </section>
@@ -139,26 +145,26 @@
       <img src="https://bebuildbee.github.io/atallo/assets/illustrations/hero-lifestyle-scene.webp" alt="Authentic creator illustration" />
     </div>
     <div class="rule-copy">
-      <p class="eyebrow">Rule 01</p>
-      <h2>Authenticity Comes First</h2>
-      <p class="section-intro">
+      <p class="eyebrow" data-i18n="rule1.eyebrow">Rule 01</p>
+      <h2 data-i18n="rule1.title">Authenticity Comes First</h2>
+      <p class="section-intro" data-i18n="rule1.intro">
         Audiences respond best to genuine experiences. Demonstrate how Allo
         Bank PayLater fits naturally into your own lifestyle instead of
         creating content that feels scripted or overly promotional.
       </p>
       <ul class="checklist">
-        <li><strong>Show Real Experiences</strong> — Share authentic moments instead of staged product demonstrations.</li>
-        <li><strong>Explain the Benefits</strong> — Focus on how PayLater helps users, not simply what it offers.</li>
-        <li><strong>Be Honest</strong> — Present information accurately and avoid exaggerated promises.</li>
+        <li data-i18n-html="rule1.item1"><strong>Show Real Experiences</strong> — Share authentic moments instead of staged product demonstrations.</li>
+        <li data-i18n-html="rule1.item2"><strong>Explain the Benefits</strong> — Focus on how PayLater helps users, not simply what it offers.</li>
+        <li data-i18n-html="rule1.item3"><strong>Be Honest</strong> — Present information accurately and avoid exaggerated promises.</li>
       </ul>
     </div>
   </section>
 
   <!-- ============ RULE 02 — LIFESTYLE CONTENT ============ -->
   <section id="rule2" class="section lifestyle-section">
-    <p class="eyebrow">Lifestyle Content</p>
-    <h2>Showcase Everyday Spending Moments</h2>
-    <p class="section-intro">
+    <p class="eyebrow" data-i18n="rule2.eyebrow">Lifestyle Content</p>
+    <h2 data-i18n="rule2.title">Showcase Everyday Spending Moments</h2>
+    <p class="section-intro" data-i18n="rule2.intro">
       Position Allo Bank PayLater as part of daily life. Highlight relatable
       situations where flexible payments, promotions, and cashback naturally
       create value.
@@ -167,51 +173,51 @@
     <div class="category-grid">
       <div class="category-tile">
         <img src="https://bebuildbee.github.io/atallo/assets/icons/icon-dining.png" alt="Dining" />
-        <h3>Dining</h3>
-        <p>Restaurants, cafés, family meals, food delivery and weekend hangouts.</p>
+        <h3 data-i18n="cat.diningTitle">Dining</h3>
+        <p data-i18n="cat.diningDesc">Restaurants, cafés, family meals, food delivery and weekend hangouts.</p>
       </div>
       <div class="category-tile">
         <img src="https://bebuildbee.github.io/atallo/assets/icons/icon-coffee.png" alt="Coffee" />
-        <h3>Coffee</h3>
-        <p>Daily coffee routines, meetings, remote work and lifestyle moments.</p>
+        <h3 data-i18n="cat.coffeeTitle">Coffee</h3>
+        <p data-i18n="cat.coffeeDesc">Daily coffee routines, meetings, remote work and lifestyle moments.</p>
       </div>
       <div class="category-tile">
         <img src="https://bebuildbee.github.io/atallo/assets/icons/icon-shopping.png" alt="Shopping" />
-        <h3>Shopping</h3>
-        <p>Fashion, gadgets, beauty, groceries and retail experiences.</p>
+        <h3 data-i18n="cat.shoppingTitle">Shopping</h3>
+        <p data-i18n="cat.shoppingDesc">Fashion, gadgets, beauty, groceries and retail experiences.</p>
       </div>
       <div class="category-tile">
         <img src="https://bebuildbee.github.io/atallo/assets/icons/icon-travel.png" alt="Travel" />
-        <h3>Travel</h3>
-        <p>Flights, hotels, vacations, commuting and spontaneous trips.</p>
+        <h3 data-i18n="cat.travelTitle">Travel</h3>
+        <p data-i18n="cat.travelDesc">Flights, hotels, vacations, commuting and spontaneous trips.</p>
       </div>
       <div class="category-tile">
         <img src="https://bebuildbee.github.io/atallo/assets/icons/icon-entertainment.png" alt="Entertainment" />
-        <h3>Entertainment</h3>
-        <p>Movies, concerts, streaming, gaming and leisure activities.</p>
+        <h3 data-i18n="cat.entertainmentTitle">Entertainment</h3>
+        <p data-i18n="cat.entertainmentDesc">Movies, concerts, streaming, gaming and leisure activities.</p>
       </div>
       <div class="category-tile">
         <img src="https://bebuildbee.github.io/atallo/assets/icons/icon-fashion.png" alt="Fashion" />
-        <h3>Fashion</h3>
-        <p>Apparel, accessories, footwear and seasonal collections.</p>
+        <h3 data-i18n="cat.fashionTitle">Fashion</h3>
+        <p data-i18n="cat.fashionDesc">Apparel, accessories, footwear and seasonal collections.</p>
       </div>
     </div>
 
     <div class="approach-banner">
       <img src="https://bebuildbee.github.io/atallo/assets/illustrations/assetsillustrationslifestyle-creators.webp" alt="Lifestyle Illustration" />
       <div>
-        <p class="eyebrow">Recommended Approach</p>
-        <h3>Build Stories Around Real Lifestyle Moments</h3>
-        <p>Instead of listing features, create content where PayLater naturally solves everyday situations, helping viewers imagine themselves using it.</p>
+        <p class="eyebrow" data-i18n="approach.eyebrow">Recommended Approach</p>
+        <h3 data-i18n="approach.title">Build Stories Around Real Lifestyle Moments</h3>
+        <p data-i18n="approach.desc">Instead of listing features, create content where PayLater naturally solves everyday situations, helping viewers imagine themselves using it.</p>
       </div>
     </div>
   </section>
 
   <!-- ============ CREATOR OPPORTUNITIES ============ -->
   <section id="rule3" class="section opportunities-section">
-    <p class="eyebrow">Creator Opportunities</p>
-    <h2>Turn Everyday Moments Into High-Performing Content</h2>
-    <p class="section-intro">
+    <p class="eyebrow" data-i18n="opp.eyebrow">Creator Opportunities</p>
+    <h2 data-i18n="opp.title">Turn Everyday Moments Into High-Performing Content</h2>
+    <p class="section-intro" data-i18n="opp.intro">
       Combine merchant promotions, cashback, flexible installments and
       lifestyle storytelling to create engaging creator content that feels
       natural while delivering value.
@@ -220,37 +226,37 @@
     <div class="featured-campaign">
       <img src="https://bebuildbee.github.io/atallo/assets/illustrations/promo-section-illustration.webp" alt="Promotion Illustration" />
       <div>
-        <p class="eyebrow">Featured Campaign</p>
-        <h3>Cashback, Rewards &amp; Merchant Promotions</h3>
-        <p>Mix promotions with authentic storytelling instead of focusing only on discounts. Viewers remember experiences, not advertisements.</p>
-        <a href="#journey" class="btn btn-primary">Start Creating</a>
+        <p class="eyebrow" data-i18n="opp.featuredEyebrow">Featured Campaign</p>
+        <h3 data-i18n="opp.featuredTitle">Cashback, Rewards &amp; Merchant Promotions</h3>
+        <p data-i18n="opp.featuredDesc">Mix promotions with authentic storytelling instead of focusing only on discounts. Viewers remember experiences, not advertisements.</p>
+        <a href="#journey" class="btn btn-primary" data-i18n="opp.featuredCta">Start Creating</a>
       </div>
     </div>
 
     <div class="benefit-grid">
       <div class="benefit-card">
         <img src="https://bebuildbee.github.io/atallo/assets/cards/floating-card-credit-limit.webp" alt="" />
-        <h3>Flexible Credit</h3>
-        <p>Show audiences how PayLater helps spread payments comfortably.</p>
+        <h3 data-i18n="opp.b1Title">Flexible Credit</h3>
+        <p data-i18n="opp.b1Desc">Show audiences how PayLater helps spread payments comfortably.</p>
       </div>
       <div class="benefit-card">
         <img src="https://bebuildbee.github.io/atallo/assets/cards/floating-card-cashback.webp" alt="" />
-        <h3>Cashback Rewards</h3>
-        <p>Highlight cashback benefits through genuine purchase experiences.</p>
+        <h3 data-i18n="opp.b2Title">Cashback Rewards</h3>
+        <p data-i18n="opp.b2Desc">Highlight cashback benefits through genuine purchase experiences.</p>
       </div>
       <div class="benefit-card">
         <img src="https://bebuildbee.github.io/atallo/assets/cards/floating-card-promo.webp" alt="" />
-        <h3>Merchant Promotions</h3>
-        <p>Feature real merchant offers that match your audience.</p>
+        <h3 data-i18n="opp.b3Title">Merchant Promotions</h3>
+        <p data-i18n="opp.b3Desc">Feature real merchant offers that match your audience.</p>
       </div>
     </div>
   </section>
 
   <!-- ============ REFERRAL CODE / REGISTRATION JOURNEY ============ -->
   <section id="journey" class="section journey-section">
-    <p class="eyebrow">Referral Code Usage</p>
-    <h2>How Your Code Will Be Used in 3 Simple Steps</h2>
-    <p class="section-intro">
+    <p class="eyebrow" data-i18n="journey.eyebrow">Referral Code Usage</p>
+    <h2 data-i18n="journey.title">How Your Code Will Be Used in 3 Simple Steps</h2>
+    <p class="section-intro" data-i18n-html="journey.intro">
       Becoming an Allo Bank user only takes a few minutes. After installing,
       they'll complete the Allo Bank PayLater registration — and both of you
       become eligible for rewards once their credit limit clears
@@ -261,44 +267,44 @@
       <div class="step">
         <img src="https://bebuildbee.github.io/atallo/assets/phones/phone-referral-registration-1.webp" alt="Phone" />
         <span class="step-num">01</span>
-        <h3>Download Allo Bank</h3>
-        <p>User opens Allo Bank, goes to the Allo Bank PayLater page.</p>
+        <h3 data-i18n="journey.step1Title">Download Allo Bank</h3>
+        <p data-i18n="journey.step1Desc">User opens Allo Bank, goes to the Allo Bank PayLater page.</p>
       </div>
       <div class="step">
         <img src="https://bebuildbee.github.io/atallo/assets/phones/phone-referral-registration-2.webp" alt="Phone" />
         <span class="step-num">02</span>
-        <h3>Go To PayLater Page</h3>
-        <p>They'll go to the referral section in the page.</p>
+        <h3 data-i18n="journey.step2Title">Go To PayLater Page</h3>
+        <p data-i18n="journey.step2Desc">They'll go to the referral section in the page.</p>
       </div>
       <div class="step">
         <img src="https://bebuildbee.github.io/atallo/assets/phones/phone-referral-registration-3.webp" alt="Phone" />
         <span class="step-num">03</span>
-        <h3>Use Your Referral Code</h3>
-        <p>During registration, they'll add your referral code to the field.</p>
+        <h3 data-i18n="journey.step3Title">Use Your Referral Code</h3>
+        <p data-i18n="journey.step3Desc">During registration, they'll add your referral code to the field.</p>
       </div>
     </div>
 
-    <a href="https://ads-influencer.vercel.app/" class="btn btn-primary btn-lg">Join as Allo Bank Creator</a>
+    <a href="https://ads-influencer.vercel.app/" class="btn btn-primary btn-lg" data-i18n="journey.cta">Join as Allo Bank Creator</a>
   </section>
 
   <!-- ============ NEW USER BONUS ============ -->
   <section class="section bonus-section">
     <div class="bonus-copy">
-      <p class="eyebrow">New User Bonus</p>
-      <h2>Start Using Allo Bank and Enjoy Our Promo!</h2>
-      <p class="section-intro">
+      <p class="eyebrow" data-i18n="bonus.eyebrow">New User Bonus</p>
+      <h2 data-i18n="bonus.title">Start Using Allo Bank and Enjoy Our Promo!</h2>
+      <p class="section-intro" data-i18n="bonus.intro">
         Register your Allo Bank account, activate PayLater, complete your
         first eligible transaction and enjoy exclusive cashback, rewards and
         special merchant promotions.
       </p>
       <ul class="tag-list">
-        <li>Cashback Rewards</li>
-        <li>Flexible Installments</li>
-        <li>Exclusive Merchant Promotions</li>
-        <li>Instant Digital Registration</li>
+        <li data-i18n="bonus.tag1">Cashback Rewards</li>
+        <li data-i18n="bonus.tag2">Flexible Installments</li>
+        <li data-i18n="bonus.tag3">Exclusive Merchant Promotions</li>
+        <li data-i18n="bonus.tag4">Instant Digital Registration</li>
       </ul>
       <div class="hero-actions">
-        <a href="our-promotions.html" class="btn btn-primary">Our Promotions</a>
+        <a href="our-promotions.html" class="btn btn-primary" data-i18n="bonus.cta">Our Promotions</a>
       </div>
     </div>
     <div class="bonus-media">
@@ -310,13 +316,13 @@
   <!-- ============ FINAL CTA ============ -->
   <section class="section final-cta-section">
     <div>
-      <p class="eyebrow">Ready to Start?</p>
-      <h2>Create Better Content. Earn More Rewards.</h2>
-      <p class="section-intro">
+      <p class="eyebrow" data-i18n="final.eyebrow">Ready to Start?</p>
+      <h2 data-i18n="final.title">Create Better Content. Earn More Rewards.</h2>
+      <p class="section-intro" data-i18n="final.desc">
         Follow the creator guidelines, register for Allo Bank PayLater, and
         start creating authentic content that audiences trust.
       </p>
-      <a href="https://ads-influencer.vercel.app/" class="btn btn-primary btn-lg">Start Registration</a>
+      <a href="https://ads-influencer.vercel.app/" class="btn btn-primary btn-lg" data-i18n="final.cta">Start Registration</a>
     </div>
     <img src="https://bebuildbee.github.io/atallo/assets/illustrations/final-cta-illustration.webp" alt="Final CTA" />
   </section>
@@ -325,12 +331,18 @@
 
 <footer class="footer">
   <img src="https://bebuildbee.github.io/atallo/assets/logos/allobank-logo.svg" alt="Allo Bank" class="footer-logo" />
-  <p>Official creator guideline for Allo Bank PayLater.</p>
-  <p class="footer-copy">© 2026 Allo Bank. All Rights Reserved.</p>
+  <p data-i18n="footer.tagline">Official creator guideline for Allo Bank PayLater.</p>
+  <p class="footer-copy" data-i18n="footer.copyright">© 2026 Allo Bank. All Rights Reserved.</p>
   <div class="footer-links">
-    <a href="#">Privacy</a>
-    <a href="#">Terms</a>
-    <a href="#journey">Registration</a>
+    <a href="https://allobank.com/privacy?lang=en"
+       data-base-href="https://allobank.com/privacy"
+       data-legal-link
+       data-i18n="footer.privacy">Privacy</a>
+    <a href="https://allobank.com/term-condition?lang=en"
+       data-base-href="https://allobank.com/term-condition"
+       data-legal-link
+       data-i18n="footer.terms">Terms</a>
+    <a href="#journey" data-i18n="footer.registration">Registration</a>
   </div>
   <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
 </footer>
