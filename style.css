@@ -114,6 +114,7 @@ img { max-width: 100%; display: block; }
 .nav-links { display: flex; gap: 28px; }
 .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--ink-soft); }
 .nav-links a:hover { color: var(--flame); }
+.nav-right { display: flex; align-items: center; gap: 14px; }
 .nav-cta {
   font-size: 0.88rem;
   font-weight: 600;
@@ -124,6 +125,31 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 8px 18px rgba(255, 106, 44, 0.28);
 }
 @media (max-width: 720px) { .nav-links { display: none; } }
+
+/* ---------- language toggle ---------- */
+.lang-toggle {
+  display: flex;
+  background: var(--paper-dim);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+.lang-btn {
+  border: none;
+  background: transparent;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.lang-btn:hover { color: var(--ink); }
+.lang-btn.is-active { background: var(--ink); color: #fff; }
+.lang-btn:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
 
 /* ---------- hero ---------- */
 .hero {
@@ -182,7 +208,6 @@ img { max-width: 100%; display: block; }
   background: radial-gradient(ellipse at center, rgba(22,25,43,0.16) 0%, rgba(22,25,43,0) 70%);
   filter: blur(6px);
 }
-.hero-phone-shadow[src] { content: ''; } /* the shipped shadow asset is dropped in favor of the soft radial above */
 .hero-phone {
   position: relative;
   z-index: 1;
@@ -211,10 +236,7 @@ img { max-width: 100%; display: block; }
   0%, 100% { transform: scale(1.2) translateY(0); }
   50% { transform: scale(1.2) translateY(-14px); }
 }
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-14px); }
-}
+
 @media (max-width: 860px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { min-height: 460px; }
@@ -408,6 +430,10 @@ img { max-width: 100%; display: block; }
 .tag-list li { background: var(--teal-dim); color: var(--teal); font-size: 0.82rem; font-weight: 600; padding: 8px 14px; border-radius: 999px; }
 .bonus-media { position: relative; text-align: center; }
 .bonus-coins { position: absolute; bottom: -10px; right: 10%; width: 30%; animation: float 5s ease-in-out infinite; }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
 @media (max-width: 780px) { .bonus-section, .final-cta-section { grid-template-columns: 1fr; padding: 48px 24px; } }
 
 /* ---------- promotions page ---------- */
@@ -466,6 +492,8 @@ img { max-width: 100%; display: block; }
 }
 .promo-banner .section-intro { margin: 0; max-width: 460px; }
 .inline-link { color: var(--flame); font-weight: 600; text-decoration: underline; }
+
+/* ---------- footer ---------- */
 .footer {
   text-align: center;
   padding: 56px 24px 40px;
